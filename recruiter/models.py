@@ -18,5 +18,8 @@ class Song(models.Model):
     file_type=models.CharField(max_length=10)
     song_title=models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.song_title
+
 
 
