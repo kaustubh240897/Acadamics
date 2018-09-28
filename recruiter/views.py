@@ -16,3 +16,4 @@ def detail(request,album_id):
     except Album.DoesNotExist:
         raise Http404("Album does not exist")
     return render(request,'recruiter/detail.html',{'album': album})
+
