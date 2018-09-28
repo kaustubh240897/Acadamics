@@ -1,3 +1,7 @@
+{% extends 'music/base.html' %}
+{% block title %}Album Details{% endblock %}
+{% block body %}
+
 <img src="{{ album.album_logo }}">
 
 <h1>{{ album.album_title }}</h1>
@@ -23,4 +27,4 @@
     <input type="submit" value="Favourite">
 </form>
 
-
+{% endblock %}
