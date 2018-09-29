@@ -15,7 +15,7 @@ urlpatterns = [
    # url(r'^(?P<album_id>[0-9]+)/favourite/$' ,views.favourite, name='favourite')
 
     # /music/album/add/
-    url(r'album/add/$',views.AlbumCreate.as_view(),name='album.add')
+    url(r'album/add/$',views.AlbumCreate.as_view(), name='album-add'),
 
 
 
