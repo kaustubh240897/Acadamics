@@ -5,6 +5,8 @@
 <ul>
     {% for album in all_albums %}
     <li> <a href="{% url 'music:detail' album.id %}"> {{ album.album_title }} </a> </li>
+
+
     <!-- Delete -->
     <form action="{% url 'music:album-delete' album.id %}" method="post" style="display:inline;">
         {% csrf_token %}
